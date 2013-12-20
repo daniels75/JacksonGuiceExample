@@ -51,7 +51,7 @@ public class ServerProvider {
             }
         });
 
-        ResourceConfig rc = new PackagesResourceConfig("ngdemo.web");
+        ResourceConfig rc = new PackagesResourceConfig("org.daniels");
         IoCComponentProviderFactory ioc = new GuiceComponentProviderFactory(rc, injector);
         server = GrizzlyServerFactory.createHttpServer(BASE_URI + "web/", rc, ioc);
 
